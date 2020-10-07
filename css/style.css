@@ -66,5 +66,77 @@
 
 body {
     font-family: var(--font-main);
-    background-color: var(--c-dark);
+}
+
+/* FRONT PAGE */
+.front-page {
+    width: 320px;
+    background: var(--c-dark);
+    padding: 45px 10px 55px 10px;
+    box-sizing: border-box;
+}
+
+.front-page-myname {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    text-transform: uppercase;
+    color: var(--txt-c-accent);
+    text-align: center;
+}
+
+.front-page-profession {
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 42px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--txt-c-light);
+}
+
+.front-page-description {
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--txt-c-light);
+}
+
+.navigation {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    min-height: 30px;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.hire-me-btn {
+    position: absolute;
+    left: 160px;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--txt-c-accent);
+    text-decoration: none;
+}
+
+.mobile-menu {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: var(--c-accent);
+
+}
+
+.mobile-menu i {
+    /* width: 10px; */
+    color: var(--c-light);
+
+    width: 30px;
+    min-width: 30px;
+    text-align: center;
+    margin: 22% auto;
 }
