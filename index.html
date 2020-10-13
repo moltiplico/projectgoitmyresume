@@ -21,6 +21,7 @@
 <body>
 
     <!-- FRONT PAGE -->
+
     <section class="front-page">
         <nav class="navigation">
             <a href="" class="logo-link">
@@ -266,14 +267,11 @@
             <h3 class="callback-form-title">/Are you minding [a project?]</h3>
             <p class="callback-form-descr">Leave a request to discuss the task and technical requirements
             </p>
-            <input type="text" name="name" required class="callback-form-input" pattern="^[A-Za-zА-Яа-яЁё]{1,20}$"
-                placeholder="Name">
-            <span class="form__error">Enter your name (Andrew)</span>
-            <input type="email" name="email" required class="callback-form-input" placeholder="Email">
-            <span class="form__error">Enter your email (example@site.com)</span>
-            <input type="tel" name="phone" required class="callback-form-input" pattern="[\+]\d{2}\d{3}\d{3}\d{2}\d{2}"
-                placeholder="Phone" minlength="13" maxlength="13">
-            <span class="form__error">Enter your phone (+380505050505)</span>
+            <input type="text" name="name" class="callback-form-input" placeholder="Name" id="callback-form-input-name">
+            <input type="email" name="email" class="callback-form-input" placeholder="example@email.com"
+                id="callback-form-input-email">
+            <input type="tel" name="phone" class="callback-form-input" placeholder="+380 (__) ___-__-__" minlength="13"
+                maxlength="13" id="callback-form-input-phone">
             <input type="submit" class="callback-form-submit accent-btn" value="Discuss the project  —">
         </form>
     </section>
@@ -577,6 +575,7 @@
     <script src="js/calculator.js"></script>
     <script src="js/project-modals.js"></script>
     <script src="js/modals.js"></script>
+    <script src="js/callback-form.js"></script>
 
 </body>
 

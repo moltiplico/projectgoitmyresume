@@ -113,29 +113,6 @@ body {
   color: var(--txt-c-light);
 }
 
-/* CALLBACK */
-
-.form__error {
-  color: var(--txt-c-accent);
-  text-align: center;
-  font-size: 12px;
-  display: block;
-  margin-top: 3px;
-  display: none;
-}
-
-input:valid:not(:placeholder-shown) {
-  border-color: var(--c-grey-blue);
-}
-
-input:invalid:not(:placeholder-shown) {
-  border-color: var(--c-accent);
-}
-
-input:invalid:not(:placeholder-shown)+.form__error {
-  display: block;
-}
-
 /* RADIO */
 
 
@@ -810,6 +787,12 @@ input:invalid:not(:placeholder-shown)+.form__error {
   outline: none;
   border-bottom: 1px solid var(--c-grey-blue);
   color: var(--txt-c-light);
+  opacity: 0.5;
+}
+
+.callback-form-input-error {
+  border-bottom: 1px solid var(--c-accent);
+  opacity: 0.5;
 }
 
 .callback-form-submit {
