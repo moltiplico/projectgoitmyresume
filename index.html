@@ -266,9 +266,14 @@
             <h3 class="callback-form-title">/Are you minding [a project?]</h3>
             <p class="callback-form-descr">Leave a request to discuss the task and technical requirements
             </p>
-            <input type="text" class="callback-form-input" placeholder="Name">
-            <input type="email" class="callback-form-input" placeholder="Email">
-            <input type="tel" class="callback-form-input" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Phone">
+            <input type="text" name="name" required class="callback-form-input" pattern="^[A-Za-zА-Яа-яЁё]{1,20}$"
+                placeholder="Name">
+            <span class="form__error">Enter your name (Andrew)</span>
+            <input type="email" name="email" required class="callback-form-input" placeholder="Email">
+            <span class="form__error">Enter your email (example@site.com)</span>
+            <input type="tel" name="phone" required class="callback-form-input" pattern="[\+]\d{2}\d{3}\d{3}\d{2}\d{2}"
+                placeholder="Phone" minlength="13" maxlength="13">
+            <span class="form__error">Enter your phone (+380505050505)</span>
             <input type="submit" class="callback-form-submit accent-btn" value="Discuss the project  —">
         </form>
     </section>
@@ -572,6 +577,10 @@
     <script src="js/calculator.js"></script>
     <script src="js/project-modals.js"></script>
     <script src="js/modals.js"></script>
+    <!-- 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/mail/js/mail.js"></script> -->
+
 </body>
 
 </html>

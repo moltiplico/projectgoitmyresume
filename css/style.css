@@ -113,6 +113,31 @@ body {
   color: var(--txt-c-light);
 }
 
+/* CALLBACK */
+
+.form__error {
+  color: var(--txt-c-accent);
+  text-align: center;
+  font-size: 12px;
+  display: block;
+  margin-top: 3px;
+  display: none;
+}
+
+input:valid:not(:placeholder-shown) {
+  border-color: var(--c-grey-blue);
+}
+
+input:invalid:not(:placeholder-shown) {
+  border-color: var(--c-accent);
+}
+
+input:invalid:not(:placeholder-shown)+.form__error {
+  display: block;
+}
+
+
+
 /* MODALS */
 
 .modal {
