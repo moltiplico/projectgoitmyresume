@@ -254,7 +254,7 @@ body {
 
 .request-title {
   color: var(--txt-c-accent);
-  ont-weight: bold;
+  font-weight: bold;
   font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
