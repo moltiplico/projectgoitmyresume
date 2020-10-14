@@ -262,16 +262,26 @@
         </div>
     </section>
 
-    <section class="callback-form-container">
+    <section class="callback-form-container" id="callback-form-container">
         <form action="" class="callback-form">
             <h3 class="callback-form-title">/Are you minding [a project?]</h3>
             <p class="callback-form-descr">Leave a request to discuss the task and technical requirements
             </p>
-            <input type="text" name="name" class="callback-form-input" placeholder="Name" id="callback-form-input-name">
-            <input type="email" name="email" class="callback-form-input" placeholder="example@email.com"
-                id="callback-form-input-email">
-            <input type="tel" name="phone" class="callback-form-input" placeholder="+380 (__) ___-__-__" minlength="13"
-                maxlength="13" id="callback-form-input-phone">
+            <div class="callback-form-block-input">
+                <input type="text" name="name" class="callback-form-input" placeholder="Name"
+                    id="callback-form-input-name">
+                <small>Error message</small>
+            </div>
+            <div class="callback-form-block-input">
+                <input type="email" name="email" class="callback-form-input" placeholder="example@email.com"
+                    id="callback-form-input-email">
+                <small>Error message</small>
+            </div>
+            <div>
+                <input type="tel" name="phone" class="callback-form-input" placeholder="+380 (__) ___-__-__"
+                    maxlength="13" id="callback-form-input-phone">
+                <small>Error message</small>
+            </div>
             <input type="submit" class="callback-form-submit accent-btn" value="Discuss the project  —">
         </form>
     </section>
@@ -362,14 +372,14 @@
             <a href="tel:+380505050505" class="footer-my-tel"> +38 (050) 505 05 05 </a>
             <a href="mailto:andrew@gmail.com" class="footer-my-mail">andrew@gmail.com</a>
             <div class="social-links">
-                <a href="https://moltiplico.github.io/projectgoitmyresume/" class="social-links-item-link"></a>
-                <i class="fab fa-github social-links-item"></i></a>
-                <a href="https://www.linkedin.com/" class="social-links-item-link"></a>
-                <i class="fab fa-linkedin social-links-item"></i></a>
-                <a href="https://uk-ua.facebook.com/" class="social-links-item-link"></a>
-                <i class="fab fa-facebook-square social-links-item"></i></a>
-                <a href="https://www.instagram.com/" class="social-links-item-link"></a>
-                <i class="fab fa-instagram social-links-item"></i></a>
+                <a href="https://moltiplico.github.io/projectgoitmyresume/" class="social-links-item-link">
+                    <i class="fab fa-github social-links-item"></i></a>
+                <a href="https://www.linkedin.com/" class="social-links-item-link">
+                    <i class="fab fa-linkedin social-links-item"></i></a>
+                <a href="https://uk-ua.facebook.com/" class="social-links-item-link">
+                    <i class="fab fa-facebook-square social-links-item"></i></a>
+                <a href="https://www.instagram.com/" class="social-links-item-link">
+                    <i class="fab fa-instagram social-links-item"></i></a>
             </div>
         </div>
     </footer>

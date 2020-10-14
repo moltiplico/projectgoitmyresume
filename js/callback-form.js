@@ -1,10 +1,12 @@
-const callbackForm = document.querySelector('.callback-form-container');
-const callbackFormRequestModal = document.querySelector('#request');
+const callbackForm = document.getElementById('callback-form-container');
 
-const userName = document.querySelector('#callback-form-input-name');
-const userEmail = document.querySelector('#callback-form-input-email');
-const userPhone = document.querySelector('#callback-form-input-phone');
+const userName = document.getElementById('callback-form-input-name');
+const userEmail = document.getElementById('callback-form-input-email');
+const userPhone = document.getElementById('callback-form-input-phone');
 
+const callbackFormRequestModal = document.getElementById('request');
+
+// Phone click show "+380"
 userPhone.addEventListener('click', function () {
     if (!userPhone.value.trim()) {
         userPhone.value = '+380';
@@ -17,29 +19,47 @@ userPhone.addEventListener('blur', function () {
     }
 })
 
-callbackForm.addEventListener("submit", function (event) {
-    event.preventDefault();
+
+callbackForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    checkInputs();
+})
+
+function checkInputs() {
+    const userNameValue = userName.value.trim();
+    const userEmailValue = userEmail.value.trim();
+    const userPhoneValue = userPhone.value.trim();
     let hasError = false;
 
-    if (!userName.value.trim()) {
-        userName.classList.add('callback-form-input-error');
+    if (userNameValue === '') {
+        // show error
+        // add error class
+        setErrorFor(userName, 'Username cannot be blank');
         hasError = true;
     } else {
-        userName.classList.remove('callback-form-input-error');
+        //add success class
+        setSuccessFor(userName);
     }
 
-    if (!userEmail.value.trim() || !isEmailValid(userEmail.value)) {
-        userEmail.classList.add('callback-form-input-error');
+    if (userEmailValue === '') {
+        setErrorFor(userEmail, 'Email cannot be blank');
+        hasError = true;
+    } else if (!isEmailValid(userEmailValue)) {
+        setErrorFor(userEmail, 'Email is not valid');
         hasError = true;
     } else {
-        userEmail.classList.remove('callback-form-input-error');
+        setSuccessFor(userEmail);
     }
 
-    if (!userPhone.value.trim() || !isPhoneValid(userPhone.value)) {
-        userPhone.classList.add('callback-form-input-error');
+    if (userPhoneValue === '') {
+        setErrorFor(userPhone, 'Phone cannot be blank');
+        hasError = true;
+    } else if (!isPhoneValid(userPhoneValue)) {
+        setErrorFor(userPhone, 'Phone is not valid');
         hasError = true;
     } else {
-        userPhone.classList.remove('callback-form-input-error');
+        setSuccessFor(userPhone);
     }
 
     if (hasError) {
@@ -50,14 +70,32 @@ callbackForm.addEventListener("submit", function (event) {
     userEmail.value = '';
     userPhone.value = '';
 
+    // show success message
+
     callbackFormRequestModal.classList.add('modal-active');
 
     setTimeout(function () {
         callbackFormRequestModal.classList.remove('modal-active');
     }, 2000);
+}
 
-});
+function setErrorFor(input, message) {
+    const callbackFormBlockInput = input.parentElement; // .callbackFormBlockInput
+    const small = callbackFormBlockInput.querySelector('small')
 
+    // add error message inside small
+    small.innerText = message;
+
+    // add error class
+    callbackFormBlockInput.className = 'callback-form-block-input error';
+}
+
+function setSuccessFor(input) {
+    const callbackFormBlockInput = input.parentElement;
+    callbackFormBlockInput.className = 'callback-form-block-input success';
+}
+
+// valid function
 function isPhoneValid(phone = '') {
     const regexp = /(\+38)?\(?\d{3}\)?[\s\.-]?(\d{7}|\d{3}[\s\.-]\d{2}[\s\.-]\d{2}|\d{3}-\d{4})/;
 
