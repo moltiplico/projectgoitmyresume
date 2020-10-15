@@ -160,7 +160,7 @@
 
     <section class="personal-projects" id="projects">
         <div class="container">
-            <h3 class="section-title personal-projects-title">My personal _projects</h3>
+            <h3 class="section-title personal-projects-title">My personal<br> _projects</h3>
 
             <div class="personal-project-item">
                 <div class="personal-project-item-container">
@@ -236,7 +236,7 @@
         <div class="container">
             <span class="team-projects-title-bgd">TEAM</span>
             <h3 class="section-title team-projects-title">
-                Teamwork _projects
+                Teamwork<br> _projects
             </h3>
             <div class="team-project-item">
                 <div class="personal-project-item-container">
@@ -273,7 +273,7 @@
 
     <section class="callback-form-container" id="callback-form-container">
         <form action="" class="callback-form">
-            <h3 class="callback-form-title">/Are you minding [a project?]</h3>
+            <h3 class="callback-form-title">/Are you minding<br> [a project?]</h3>
             <p class="callback-form-descr">Leave a request to discuss the task and technical requirements
             </p>
             <div class="callback-form-block-input">
@@ -286,7 +286,7 @@
                     id="callback-form-input-email">
                 <small>Error message</small>
             </div>
-            <div>
+            <div class="callback-form-block-input">
                 <input type="tel" name="phone" class="callback-form-input" placeholder="+380 (__) ___-__-__"
                     maxlength="13" id="callback-form-input-phone">
                 <small>Error message</small>
@@ -300,11 +300,19 @@
             <h3 class="calculator-title section-title">
                 Calculate_ the cost of a future project
             </h3>
-            <p class="calculator-descr">
-                <span>This is an</span>
-                <span class="calculator-descr-accent">approximate</span>
-                <span>calculation.</span>
-            </p>
+            <div class="mobile-element">
+                <p class="calculator-descr mobile-element">
+                    <span>This is an</span>
+                    <span class="calculator-descr-accent">approximate</span>
+                    <span>calculation.</span>
+                </p>
+            </div>
+            <div class="tablet-element">
+                <p class="calculator-descr tablet-element">
+                    <span>This is an approximate</span>
+                    <span>calculation.</span>
+                </p>
+            </div>
             <img src="img/calculator.svg" alt="calculator" class="calculator-icon" />
             <p class="calculator-text">
                 / The final cost depends on the technical requirements, terms, specifics
@@ -312,63 +320,67 @@
             </p>
 
             <form action="" class="calculator-form">
-                <div class="calculator-form-input">
-                    <label for="calculator-form-website-type" class="calculator-form-title">What should be done:
-                    </label>
-                    <select name="website-type" id="calculator-form-website-type" class="calculator-form-select">
-                        <option value="landing-page:600">Landing Page</option>
-                        <option value="website:1000">Website</option>
-                        <option value="cms:2000">CMSe</option>
-                        <option value="portal:3000" selected>Portal</option>
-                        <option value="e-shop:2000">E-Shop</option>
-                    </select>
-                </div>
-                <div class="calculator-form-input">
-                    <label for="calculator-form-technologies" class="calculator-form-title">Choose preferred
-                        technologies
-                    </label>
-                    <select name="technologies" id="calculator-form-technologies" class="calculator-form-select"
-                        multiple>
-                        <option selected value="css:500">CSS</option>
-                        <option selected value="html:500" selected>HTML</option>
-                        <option selected value="js:700">JS</option>
-                        <option value="react:1000">React</option>
-                        <option value="angular:1000">Angular</option>
-                        <option value="php:2000">PHP</option>
-                    </select>
-                </div>
+                <div class="calculator-form-wrapper">
+                    <div class="calculator-form-input">
+                        <label for="calculator-form-website-type" class="calculator-form-title">What should be done:
+                        </label>
+                        <select name="website-type" id="calculator-form-website-type" class="calculator-form-select">
+                            <option value="landing-page:600">Landing Page</option>
+                            <option value="website:1000">Website</option>
+                            <option value="cms:2000">CMSe</option>
+                            <option value="portal:3000" selected>Portal</option>
+                            <option value="e-shop:2000">E-Shop</option>
+                        </select>
+                    </div>
+                    <div class="calculator-form-input">
+                        <label for="calculator-form-technologies" class="calculator-form-title">Choose preferred
+                            technologies
+                        </label>
+                        <select name="technologies" id="calculator-form-technologies" class="calculator-form-select"
+                            multiple>
+                            <option selected value="css:500">CSS</option>
+                            <option selected value="html:500" selected>HTML</option>
+                            <option selected value="js:700">JS</option>
+                            <option value="react:1000">React</option>
+                            <option value="angular:1000">Angular</option>
+                            <option value="php:2000">PHP</option>
+                        </select>
+                    </div>
 
-                <div class="calculator-form-input">
-                    <label for="" class="calculator-form-title">Personal account and shopping cart:</label>
-                    <div class="calculator-form-input-radio-container" id="calculator-form-input-cart">
-                        <input checked type="radio" class="calculator-form-input-field radio"
-                            id="calculator-form-input-cart-yes radio" name="cart" value="yes">
-                        <label for="calculator-form-input-cart-yes radio" class="calculator-form-labl">Yes</label>
-                        <input type="radio" class="calculator-form-input-field radio"
-                            id="calculator-form-input-cart-no radio" name="cart" value="no">
-                        <label for="calculator-form-input-cart-no radio" class="calculator-form-labl">No</label>
+                    <div class="calculator-form-input">
+                        <label for="" class="calculator-form-title">Personal account and shopping cart:</label>
+                        <div class="calculator-form-input-radio-container" id="calculator-form-input-cart">
+                            <input checked type="radio" class="calculator-form-input-field radio"
+                                id="calculator-form-input-cart-yes radio" name="cart" value="yes">
+                            <label for="calculator-form-input-cart-yes radio" class="calculator-form-labl">Yes</label>
+                            <input type="radio" class="calculator-form-input-field radio"
+                                id="calculator-form-input-cart-no radio" name="cart" value="no">
+                            <label for="calculator-form-input-cart-no radio" class="calculator-form-labl">No</label>
+                        </div>
+                    </div>
+
+                    <div class="calculator-form-input">
+                        <label for="" class="calculator-form-title">Requests reception on your email:</label>
+                        <div class="calculator-form-input-radio-container" id="calculator-form-input-reception">
+                            <input checked type="radio" class="calculator-form-input-field radio"
+                                id="calculator-form-input-reception-yes radio" name="reception" value="yes">
+                            <label for="calculator-form-input-reception-yes radio"
+                                class="calculator-form-labl">Yes</label>
+                            <input type="radio" class="calculator-form-input-field radio"
+                                id="calculator-form-input-reception-no radio" name="reception" value="no">
+                            <label for="calculator-form-input-reception-no radio"
+                                class="calculator-form-labl">No</label>
+                        </div>
+                    </div>
+
+                    <div class="calculator-form-input">
+                        <p class="calculator-form-title">Cost:</p>
+                        <p class="calculator-form-total-cost">300$</p>
+                    </div>
+                    <div class="calculator-bnt-cont">
+                        <input type="submit" value="Find out the cost  —" class="accent-btn calculator-bnt">
                     </div>
                 </div>
-
-                <div class="calculator-form-input">
-                    <label for="" class="calculator-form-title">Requests reception on your email:</label>
-                    <div class="calculator-form-input-radio-container" id="calculator-form-input-reception">
-                        <input checked type="radio" class="calculator-form-input-field radio"
-                            id="calculator-form-input-reception-yes radio" name="reception" value="yes">
-                        <label for="calculator-form-input-reception-yes radio" class="calculator-form-labl">Yes</label>
-                        <input type="radio" class="calculator-form-input-field radio"
-                            id="calculator-form-input-reception-no radio" name="reception" value="no">
-                        <label for="calculator-form-input-reception-no radio" class="calculator-form-labl">No</label>
-                    </div>
-                </div>
-
-                <div class="calculator-form-input">
-                    <p class="calculator-form-title">Cost:</p>
-                    <p class="calculator-form-total-cost">300$</p>
-                </div>
-
-                <input type="submit" value="Find out the cost  —" class="accent-btn">
-
             </form>
 
         </div>
@@ -376,10 +388,18 @@
 
     <footer class="footer" id="contacts">
         <div class="container">
-            <h3 class="footer-my-name">Andrew K</h3>
-            <p class="footer-my-proffesion">Frontend Developer</p>
-            <a href="tel:+380505050505" class="footer-my-tel"> +38 (050) 505 05 05 </a>
-            <a href="mailto:andrew@gmail.com" class="footer-my-mail">andrew@gmail.com</a>
+            <!-- <div class="footer-main-contact"> -->
+            <div class="footer-my-info">
+                <h3 class="footer-my-name">Andrew K</h3>
+                <p class="footer-my-proffesion">Frontend Developer</p>
+            </div>
+
+            <div class="footer-contacts">
+                <a href="tel:+380505050505" class="footer-my-tel">+38 (050) 505 05 05</a>
+                <a href="mailto:andrew@gmail.com" class="footer-my-mail">andrew@gmail.com</a>
+            </div>
+            <!-- </div> -->
+
             <div class="social-links">
                 <a href="https://moltiplico.github.io/projectgoitmyresume/" class="social-links-item-link">
                     <i class="fab fa-github social-links-item"></i></a>
