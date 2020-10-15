@@ -75,6 +75,15 @@ body {
 }
 
 /* COMMON */
+
+.tablet-element {
+  display: none;
+}
+
+.desktop-element {
+  display: none;
+}
+
 .accent-btn {
   background: var(--c-accent);
   font-weight: bold;
@@ -97,7 +106,7 @@ body {
   align-items: center;
   box-sizing: border-box;
   margin: auto;
-  padding: 30px 10px 55px 10px;
+  padding: 30px 10px 55px;
 }
 
 .container-left {
@@ -111,6 +120,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: var(--txt-c-light);
+  width: 295px;
 }
 
 /* RADIO */
@@ -374,9 +384,10 @@ body {
 
 /* FRONT PAGE */
 .front-page {
-  width: 320px;
+  min-width: 320px;
+  width: 100%;
   background: var(--c-dark);
-  padding: 45px 10px 55px 10px;
+  padding: 45px 10px 35px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -404,11 +415,24 @@ body {
 }
 
 .front-page-description {
+  width: 290px;
   font-size: 16px;
   line-height: 150%;
   text-align: center;
   color: var(--txt-c-light);
   margin: 0 0 20px 0;
+}
+
+.front-page-my-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.front-page-my-info-about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .navigation {
@@ -559,7 +583,8 @@ body {
 /* ABOUT PAGE */
 
 .about {
-  width: 320px;
+  min-width: 320px;
+  width: 100%;
 }
 
 .about-title {
@@ -627,7 +652,8 @@ body {
 /* PERSONAL PROJECT */
 
 .personal-projects {
-  width: 320px;
+  min-width: 320px;
+  width: 100%;
   background: var(--c-dark);
 }
 
@@ -698,7 +724,8 @@ body {
 /* TEAM PROJECT */
 
 .team-projects {
-  width: 320px;
+  min-width: 320px;
+  width: 100%;
 }
 
 .team-projects .container {
@@ -746,7 +773,8 @@ body {
 /* CALLBACK FORM SECTION */
 
 .callback-form-container {
-  width: 320px;
+  min-width: 320px;
+  width: 100%;
 }
 
 .callback-form {
@@ -820,7 +848,8 @@ body {
 /* CALCULATOR FORM SECTION */
 
 .calculator {
-  width: 320px;
+  min-width: 320px;
+  width: 100%;
   background: var(--c-dark);
 }
 
@@ -918,8 +947,9 @@ body {
 /* FOOTER SECTION*/
 
 .footer {
-  width: 320px;
-}
+  min-width: 320px;
+  width: 100%;
+  }
 
 .footer .container {
   padding: 30px 30px 50px;
@@ -1024,4 +1054,153 @@ body {
   border-left: none;
   margin: 0;
   padding-left: 8px;
+}
+
+
+@media only screen and (min-width: 640px) {
+
+  .container {
+    min-width: 640px;
+    padding: 45px 10px 80px;
+  }
+
+  /* FRONT PAGE */
+ 
+  .mobile-element {
+    display: none;
+  }
+
+  .tablet-element {
+    display: block;
+  }
+
+  .front-page-myname {
+    font-size: 36px;
+    line-height: 43px;
+    margin: 60px 0 20px;
+  }
+
+  .front-page-profession {
+    font-size: 55px;
+    line-height: 66px;
+    margin: 0 0 30px;
+  }
+
+  .front-page-profession-part-1 {
+    margin-right: 35px;
+  }
+
+  .front-page-profession-part-2 {
+    margin-left: 35px;
+  }
+
+  .front-page-description {
+    font-size: 17px;
+    line-height: 150%;
+    width: 390px;
+    margin: 0 0 40px;
+  }
+
+  .front-page-gallery-btn {
+    margin-bottom: 50px;
+  }
+
+  .front-page-my-info {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+  }
+
+  .front-page-my-photo {
+    width: 140px;
+    margin: 0 35px 0 0;
+  }
+
+   .front-page-my-info-about-me {
+     align-items: flex-start;     
+   }
+
+   .front-page-my-video-btn {
+     margin: 0;
+   }
+
+  .front-page-my-descr {
+    text-align: left;
+  }
+
+  .front-page-laptop {
+    width: 400px;
+    margin-bottom: 90px;
+  }
+
+/* ABOUT */
+  .about .container {
+    position: relative;
+  }
+
+  .about-img-text {
+    position: absolute;
+    right: 22px;
+    top: 228px;
+    font-size: 200px;
+    line-height: 240px;
+  }
+
+  .about-img {
+    width: 361px;
+    height: 390px;
+    left: -105px;
+    top: 70px;
+  }
+
+  .about-img-container {
+    margin-bottom: 0;
+  }
+
+  .about-title {
+    font-size: 50px;
+    line-height: 60px;
+    width: 600px;
+  }
+
+  .about-descr {
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 60px;
+  }
+
+  .about-text {
+    width: 340px;
+    margin-bottom: 25px;
+  }
+
+  .about-text:last-child {
+    width: 320px;
+    margin-bottom: 64px;
+  }
+
+  .team-projects-title,
+  .personal-projects-title {
+    text-align: left;
+    width: 400px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .team-project-item,
+  .personal-project-item {
+    margin: 0 25px 40px 25px;
+  }
+
+  .callback-form .container,
+  .personal-projects .container,
+  .team-projects .container {
+    align-items: normal;
+  }
+
+  .team-projects-title-bgd {
+    font-size: 200px;
+    line-height: 240px;
+    top: 19px;
+  }
 }
