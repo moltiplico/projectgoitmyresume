@@ -1,3 +1,5 @@
+'use strict';
+
 const callbackForm = document.getElementById('callback-form-container');
 
 const userName = document.getElementById('callback-form-input-name');
