@@ -355,6 +355,9 @@ body {
 }
 
 .project-modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
   background: var(--c-light);
   padding: 40px 25px;
   text-align: left;
@@ -363,9 +366,9 @@ body {
 }
 
 .project-modal-scrollable {
-  /* overflow-y: auto; */
-  /* height: 100%; */
-  /* padding: 0 20px; */
+  overflow-y: auto;
+  height: 100%;
+  padding: 0 20px;
 }
 
 .project-modal-title {
@@ -1801,9 +1804,18 @@ body {
   }
   
   /* MODAL */
+  .project-modal-scrollable {
+    width: 80%;
+  }
+
   .request-container {
     width: 350px;
     padding: 65px 125px 80px;
+  }
+
+  .project-modal-img {
+    /* height: 80%; */
+    /* width: 80%; */
   }
 
   .request-title {
@@ -1826,6 +1838,7 @@ body {
   
   .project-modal-container{
     width: 80%;
+    height: 90%;
     padding: 95px;
   }
 
