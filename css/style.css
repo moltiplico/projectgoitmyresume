@@ -370,6 +370,7 @@ body {
 }
 
 .project-modal-container {
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -382,9 +383,10 @@ body {
 }
 
 .project-modal-scrollable {
-  overflow-y: auto;
+  width: 100%;
   height: 100%;
-  padding: 0 20px;
+  overflow-y: auto;
+  padding-right: 1px;
 }
 
 .project-modal-title {
@@ -405,8 +407,9 @@ body {
   margin: 0;
 }
 
-.project-modal-img {
+.swiper-container {
   width: 100%;
+  height: auto;
   margin-bottom: 30px;
 }
 
@@ -1138,8 +1141,7 @@ body {
   padding-left: 8px;
 }
 
-
-
+/*  ELEMENT VIEV & HIDE */
 .mobile-element {
   display: flex;
 }
@@ -1147,6 +1149,7 @@ body {
 .elemetn-hide {
   display: none;
 }
+
 
 /* MEDIA */
 @media only screen and (min-width: 660px) {
@@ -1171,11 +1174,7 @@ body {
   .my-video-content {
     width: 70%;
   }
-  .my-video-close-btn {
-    /* top: 220px;
-    right: 120px; */
-  }
-
+  
   .about,
   .personal-projects,
   .team-projects,
@@ -1481,17 +1480,30 @@ body {
   }
 
   .project-modal-container {
+    width: 100%;
+    height: 90%;
     padding: 70px 55px 60px;
   }
-
-  .project-modal-img {
-    margin-bottom: 50px;
-  }
-
 }
   
 
 @media only screen and (min-width: 1160px) {
+
+   .desktop-element {
+     display: flex;
+   }
+
+   .mobile-element {
+     display: none;
+   }
+
+   .tablet-element {
+     display: none;
+   }
+
+   .td-element {
+     display: flex;
+   }
 
   .about,
   .personal-projects,
@@ -1507,23 +1519,7 @@ body {
     max-width: var(--desktop-lg);
   }
 
-  .desktop-element {
-    display: flex;
-  }
-
-  .mobile-element {
-    display: none;
-  }
-
-  .tablet-element {
-    display: none;
-  }
-
-  .td-element {
-    display: flex;
-  }
-
-  .my-video-content {
+   .my-video-content {
     width: 70%;
   }
 
@@ -1574,7 +1570,6 @@ body {
     left: 180px;
     top: -80px;
   }
-
 
   .front-page-myname {
     margin: 0 0 15px;
@@ -1662,11 +1657,11 @@ body {
 
   
   /* ABOUT ME */
-   .about .container {
-     flex-direction: row;
-     padding: 135px 15px;
-     justify-content: space-between;
-   }
+  .about .container {
+    flex-direction: row;
+    padding: 135px 15px;
+    justify-content: space-between;
+  }
 
   .about-title {
     font-size: 70px;
@@ -1687,8 +1682,7 @@ body {
 
   .about-content-wrapper {
     position: relative;
-    }
-
+  }
 
   .about-projects {
     z-index: 2;
@@ -1794,7 +1788,6 @@ body {
     position: relative;
     box-sizing: border-box;
     width: calc(100%-386px-20px);
-
   }
 
   .calculator-title {
@@ -1836,28 +1829,9 @@ body {
   }
   
   /* MODAL */
-  .project-modal-container {
-    width: 80%;
-    height: 90%;
-    padding: 95px;
-  }
-
-  .project-modal-scrollable {
-    width: 80%;
-  }
-
-  .project-modal-img {
-    margin-bottom: 50px;
-  }
-
   .request-container {
     width: 350px;
     padding: 65px 125px 80px;
-  }
-
-  .project-modal-img {
-    /* height: 80%; */
-    /* width: 80%; */
   }
 
   .request-title {
@@ -1877,4 +1851,13 @@ body {
     line-height: 130%;
     margin: 0;
   }
+
+  .project-modal-container {
+    width: 50%;
+    padding: 95px;
+  }
+
+  /* .swiper-container {
+    width: calc(100% - 7%);
+  } */
 }
