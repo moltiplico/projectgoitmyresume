@@ -1857,7 +1857,8 @@ body {
     padding: 95px;
   }
 
-  /* .swiper-container {
-    width: calc(100% - 7%);
-  } */
+  .swiper-container {
+    /* width: calc(100% - 7%); */
+    width: 99%;
+  }
 }
