@@ -1856,9 +1856,4 @@ body {
     width: 50%;
     padding: 95px;
   }
-
-  .swiper-container {
-    /* width: calc(100% - 7%); */
-    width: 99%;
-  }
 }
