@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/choices.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
 </head>
 
 <body>
@@ -23,16 +24,16 @@
     <!-- FRONT PAGE -->
     <section class="front-page">
         <div class="container">
-            <nav class="navigation">
+            <nav class="navigation" data-aos="fade-down" data-aos-delay="1000">
                 <a href="" class="logo-link">
-                    <img src="img/goit-logo.svg" alt="GOIT logo"></a>
+                    <img src="img/goit-logo.svg" alt="GOIT logo" data-aos="fade-right" data-aos-delay="2000"></a>
                 <div class="desktop-menu elemetn-hide desktop-element">
                     <a href="#about" class="desktop-menu-link">about</a>
                     <a href="#projects" class="desktop-menu-link">projects</a>
                     <a href="#calculator" class="desktop-menu-link">cost calculatorr</a>
                     <a href="#contacts" class="desktop-menu-link">contacts</a>
                 </div>
-                <div class="navigation-part">
+                <div class="navigation-part" data-aos="fade-left" data-aos-delay="2000">
                     <a href="#callback-form-container" class="hire-me-btn"> — HIRE ME</a>
                     <a href="" class="mobile-menu mobile-element tablet-element" id="mobile-menu-btn">
                         <i class="fas fa-bars"></i>
@@ -42,67 +43,88 @@
 
             <div class="front-page-wrapper">
                 <div class="front-page-main-info">
-                    <img src="img/my-photo.svg" alt="my photo"
-                        class="front-page-my-photo elemetn-hide desktop-element" />
-                    <h1 class="front-page-myname">[Andrew K]</h1>
-                    <h2 class="front-page-profession">
+                    <img src="img/my-photo.svg" alt="my photo" class="front-page-my-photo elemetn-hide desktop-element"
+                        data-aos="zoom-in-down" data-aos-delay="600">
+                    <h1 class="front-page-myname" data-aos="fade-up" data-aos-delay="200">[Andrew K]</h1>
+                    <h2 class="front-page-profession" data-aos="zoom-in">
                         <span class="front-page-profession-part-1">{Frontend}</span><br>
                         <span class="front-page-profession-part-2">_DEVELOPER</span>
                     </h2>
-                    <p class="front-page-description">/ Using HTML, CSS, JavaScript, React Native and Node.js I help to
+                    <p class="front-page-description" data-aos="fade-down" data-aos-delay="200">/ Using HTML, CSS,
+                        JavaScript, React Native and Node.js I help to
                         build
                         websites, small and medium web apps
                         for business</p>
-                    <a href="#projects" class="front-page-gallery-btn accent-btn">See my recent works —</a>
+                    <div class="front-page-main-info" data-aos="fade-up" data-aos-delay="300">
+                        <a href="#projects" class="front-page-gallery-btn accent-btn">See my recent works —</a>
+                    </div>
                 </div>
                 <div class="front-page-my-info">
-                    <img src="img/my-photo.svg" alt="my photo" class="front-page-my-photo tablet-element">
-                    <div class="front-page-my-info-about-me">
+                    <img src="img/my-photo.svg" alt="my photo" class="front-page-my-photo tablet-element"
+                        data-aos="fade-right" data-aos-delay="1200">
+                    <div class="front-page-my-info-about-me" data-aos="fade-left" data-aos-delay="1200">
                         <p class="front-page-my-descr mobile-element">About me in 2 minutes</p>
                         <p class="front-page-my-descr elemetn-hide td-element">About me<br> in 2
                             minutes</p>
-                        <button class="front-page-my-video-btn" id="my-video-btn">
+                        <button class="front-page-my-video-btn" id="my-video-btn" data-aos="fade-up"
+                            data-aos-delay="200">
                             <i class="fas fa-play"></i>
                             play
                         </button>
                     </div>
                 </div>
 
-                <img src="img/laptop.svg" alt="" class="front-page-laptop">
+                <img src="img/laptop.svg" alt="" class="front-page-laptop" data-aos="fade-right" data-aos-delay="300">
 
-                <div class="experience-wrapper">
+                <div class="experience-wrapper" data-aos="fade-right">
                     <div class="experience-container">
                         <h3 class="experience-title">My Coding Skills
                             & Experience</h3>
                         <div>
                             <div class="experience-skill">
                                 <div class="experience-dots">
-                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"></i>
-                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"></i>
-                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"></i>
-                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"></i>
-                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"></i>
-                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"></i>
+                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"
+                                        data-aos="fade-left" data-aos-delay="3000"></i>
+                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"
+                                        data-aos="fade-left" data-aos-delay="2500"></i>
+                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"
+                                        data-aos="fade-left" data-aos-delay="2000"></i>
+                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"
+                                        data-aos="fade-left" data-aos-delay="1500"></i>
+                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"
+                                        data-aos="fade-left" data-aos-delay="1000"></i>
+                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"
+                                        data-aos="fade-left" data-aos-delay="500"></i>
                                 </div>
                                 <p class="experience-text">Html</p>
                             </div>
                             <div class="experience-skill">
                                 <div class="experience-dots">
-                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"></i>
-                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"></i>
-                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"></i>
-                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"></i>
-                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"></i>
-                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"></i>
+                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"
+                                        data-aos="fade-left" data-aos-delay="3000"></i>
+                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"
+                                        data-aos="fade-left" data-aos-delay="2500"></i>
+                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"
+                                        data-aos="fade-left" data-aos-delay="2000"></i>
+                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"
+                                        data-aos="fade-left" data-aos-delay="1500"></i>
+                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"
+                                        data-aos="fade-left" data-aos-delay="1000"></i>
+                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"
+                                        data-aos="fade-left" data-aos-delay="500"></i>
                                 </div>
                                 <p class="experience-text">CSS</p>
                             </div>
                             <div class="experience-skill">
                                 <div class="experience-dots">
-                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"></i>
-                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"></i>
-                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"></i>
-                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"></i>
+                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"
+                                        data-aos="fade-left" data-aos-delay="3000"></i>
+                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"
+                                        data-aos="fade-left" data-aos-delay="2500"></i>
+                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"
+                                        data-aos="fade-left" data-aos-delay="2000"></i>
+                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"
+                                        data-aos="fade-left" data-aos-delay="1500"></i>
                                     <i class="experience-dots-item far fa-circle"></i>
                                     <i class="experience-dots-item far fa-circle"></i>
                                 </div>
@@ -110,9 +132,12 @@
                             </div>
                             <div class="experience-skill">
                                 <div class="experience-dots">
-                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"></i>
-                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"></i>
-                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"></i>
+                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"
+                                        data-aos="fade-left" data-aos-delay="3000"></i>
+                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"
+                                        data-aos="fade-left" data-aos-delay="2500"></i>
+                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"
+                                        data-aos="fade-left" data-aos-delay="2000"></i>
                                     <i class="experience-dots-item far fa-circle"></i>
                                     <i class="experience-dots-item far fa-circle"></i>
                                     <i class="experience-dots-item far fa-circle"></i>
@@ -121,8 +146,10 @@
                             </div>
                             <div class="experience-skill">
                                 <div class="experience-dots">
-                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"></i>
-                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"></i>
+                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"
+                                        data-aos="fade-left" data-aos-delay="3000"></i>
+                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"
+                                        data-aos="fade-left" data-aos-delay="2500"></i>
                                     <i class="experience-dots-item far fa-circle"></i>
                                     <i class="experience-dots-item far fa-circle"></i>
                                     <i class="experience-dots-item far fa-circle"></i>
@@ -132,8 +159,10 @@
                             </div>
                             <div class="experience-skill">
                                 <div class="experience-dots">
-                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"></i>
-                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"></i>
+                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"
+                                        data-aos="fade-left" data-aos-delay="3000"></i>
+                                    <i class="experience-dots-item experience-dots-item-accent far fa-circle"
+                                        data-aos="fade-left" data-aos-delay="2500"></i>
                                     <i class="experience-dots-item far fa-circle"></i>
                                     <i class="experience-dots-item far fa-circle"></i>
                                     <i class="experience-dots-item far fa-circle"></i>
@@ -151,17 +180,19 @@
     <section class="about" id="about">
         <div class="container container-left">
             <div class="about-content-wrapper">
-                <h3 class="section-title about-title">I code things from scratch_</h3>
-                <p class="about-descr">
+                <h3 class="section-title about-title" data-aos="fade-right">I code things from
+                    scratch_</h3>
+                <p class="about-descr" data-aos="fade-right" data-aos-delay="100">
                     <span>[and help to create<br> great web apps]</span>
                 </p>
                 <div class="about-img-container">
-                    <p class="about-img-text">
+                    <p class="about-img-text" data-aos="fade-down" data-aos-delay="200">
                         WEB
-                        <img src="img/web-apps-laptop.png" alt="web apps laptop" class="about-img" />
+                        <img src="img/web-apps-laptop.png" alt="web apps laptop" class="about-img" data-aos="fade-up"
+                            data-aos-delay="400">
                     </p>
                 </div>
-                <p class="about-text">
+                <p class="about-text" data-aos="fade-right" data-aos-delay="200">
                     / I will help you to create a high-performance Landing Page, functional
                     corporate website for your business, interactive web app for SaaS,
                     startup, or other services.<br><br>
@@ -170,28 +201,31 @@
                 </p>
             </div>
             <div class="about-projects elemetn-hide desktop-element">
-                <div class="about-projects-bar">
+                <div class="about-projects-bar" data-aos="fade-down" data-aos-delay="100">
                     <p class="about-projects-count">10+</p>
                 </div>
-                <p class="about-projects-text">completed projects</p>
+                <p class="about-projects-text" data-aos="fade-down" data-aos-anchor-placement="center-bottom">completed
+                    projects</p>
             </div>
         </div>
     </section>
 
     <section class="personal-projects" id="projects">
         <div class="container">
-            <h3 class="section-title personal-projects-title">My personal<br> _projects</h3>
+            <h3 class="section-title personal-projects-title" data-aos="fade-right"
+                data-aos-anchor-placement="top-center">
+                My personal<br> _projects</h3>
 
             <div class="personal-project-item-wrapper">
                 <div class="personal-project-item">
-                    <div class="personal-project-item-container">
-                        <div class="projet-item-dot-container">
+                    <div class="personal-project-item-container" data-aos="zoom-out-right">
+                        <div class=" projet-item-dot-container">
                             <div class="projet-item-dot"></div>
                             <div class="projet-item-dot"></div>
                             <div class="projet-item-dot"></div>
                         </div>
                         <img src="img/projects/personal/full-stack.jpg" alt="full stack website"
-                            class="personal-project-img" />
+                            class="personal-project-img">
                     </div>
                     <p class="personal-project-name">
                         <i class="fas fa-laptop-code personal-project-icon"></i>
@@ -202,14 +236,13 @@
                 </div>
 
                 <div class="personal-project-item">
-                    <div class="personal-project-item-container">
-                        <div class="projet-item-dot-container">
+                    <div class="personal-project-item-container" data-aos="zoom-out-right">
+                        <div class=" projet-item-dot-container">
                             <div class="projet-item-dot"></div>
                             <div class="projet-item-dot"></div>
                             <div class="projet-item-dot"></div>
                         </div>
-                        <img src="img/projects/personal/wedding.jpg" alt="wedding website"
-                            class="personal-project-img" />
+                        <img src="img/projects/personal/wedding.jpg" alt="wedding website" class="personal-project-img">
                     </div>
                     <p class="personal-project-name">
                         <i class="fas fa-laptop-code personal-project-icon"></i>
@@ -221,14 +254,14 @@
                 </div>
 
                 <div class="personal-project-item">
-                    <div class="personal-project-item-container">
-                        <div class="projet-item-dot-container">
+                    <div class="personal-project-item-container" data-aos="zoom-out-right">
+                        <div class=" projet-item-dot-container">
                             <div class="projet-item-dot"></div>
                             <div class="projet-item-dot"></div>
                             <div class="projet-item-dot"></div>
                         </div>
                         <img src="img/projects/personal/pro-test.jpg" alt="pro test website"
-                            class="personal-project-img" />
+                            class="personal-project-img">
                     </div>
                     <p class="personal-project-name">
                         <i class="fas fa-laptop-code personal-project-icon"></i>
@@ -239,13 +272,13 @@
                 </div>
 
                 <div class="personal-project-item">
-                    <div class="personal-project-item-container">
-                        <div class="projet-item-dot-container">
+                    <div class="personal-project-item-container" data-aos="zoom-out-right">
+                        <div class=" projet-item-dot-container">
                             <div class="projet-item-dot"></div>
                             <div class="projet-item-dot"></div>
                             <div class="projet-item-dot"></div>
                         </div>
-                        <img src="img/projects/personal/goit.jpg" alt="goit website" class="personal-project-img" />
+                        <img src="img/projects/personal/goit.jpg" alt="goit website" class="personal-project-img">
                     </div>
                     <p class="personal-project-name">
                         <i class="fas fa-laptop-code personal-project-icon"></i>
@@ -260,19 +293,19 @@
 
     <section class="team-projects">
         <div class="container">
-            <span class="team-projects-title-bgd">TEAM</span>
-            <h3 class="section-title team-projects-title">
+            <span class="team-projects-title-bgd" data-aos="zoom-in-up" data-aos-delay="100">TEAM</span>
+            <h3 class="section-title team-projects-title" data-aos="fade-right" data-aos-anchor-placement="top-center">
                 Teamwork<br> _projects
             </h3>
             <div class="team-project-item-wrapper">
                 <div class="team-project-item">
-                    <div class="personal-project-item-container">
+                    <div class="personal-project-item-container" data-aos="zoom-out-right">
                         <div class="projet-item-dot-container">
                             <div class="projet-item-dot"></div>
                             <div class="projet-item-dot"></div>
                             <div class="projet-item-dot"></div>
                         </div>
-                        <img src="img/projects/team/questify.jpg" alt="quetify app" class="personal-project-img" />
+                        <img src="img/projects/team/questify.jpg" alt="quetify app" class="personal-project-img">
                     </div>
                     <p class="team-project-name">
                         <i class="fas fa-laptop-code personal-project-icon"></i>
@@ -282,13 +315,13 @@
                         —</button>
                 </div>
                 <div class="team-project-item">
-                    <div class="personal-project-item-container">
+                    <div class="personal-project-item-container" data-aos="zoom-out-right">
                         <div class="projet-item-dot-container">
                             <div class="projet-item-dot"></div>
                             <div class="projet-item-dot"></div>
                             <div class="projet-item-dot"></div>
                         </div>
-                        <img src="img/projects/team/it-test.jpg" alt="it test app" class="personal-project-img" />
+                        <img src="img/projects/team/it-test.jpg" alt="it test app" class="personal-project-img">
                     </div>
                     <p class="team-project-name">
                         <i class="fas fa-laptop-code personal-project-icon"></i>
@@ -310,21 +343,23 @@
                 <div class="callback-form-input-block-container">
                     <div class="callback-form-block-input">
                         <input type="text" name="name" class="callback-form-input" placeholder="Name"
-                            id="callback-form-input-name">
+                            id="callback-form-input-name" data-aos="zoom-in" data-aos-delay="200">
                         <small>Error message</small>
                     </div>
                     <div class="callback-form-block-input">
                         <input type="email" name="email" class="callback-form-input" placeholder="example@email.com"
-                            id="callback-form-input-email">
+                            id="callback-form-input-email" data-aos="zoom-in" data-aos-delay="200">
                         <small>Error message</small>
                     </div>
                     <div class="callback-form-block-input">
                         <input type="tel" name="phone" class="callback-form-input" placeholder="+380 (__) ___-__-__"
-                            maxlength="13" id="callback-form-input-phone">
+                            maxlength="13" id="callback-form-input-phone" data-aos="zoom-in" data-aos-delay="200">
                         <small>Error message</small>
                     </div>
                 </div>
-                <input type="submit" class="callback-form-submit accent-btn" value="Discuss the project  —">
+                <div data-aos="fade-down" data-aos-delay="200">
+                    <input type="submit" class="callback-form-submit accent-btn" value="Discuss the project  —">
+                </div>
             </form>
         </div>
     </section>
@@ -332,20 +367,21 @@
     <section class="calculator" id="calculator">
         <div class="container">
             <div class="calculator-info-containet">
-                <h3 class="calculator-title section-title mobile-element">
+                <h3 class="calculator-title section-title mobile-element" data-aos="fade-right">
                     Calculate_ the cost of a future project
                 </h3>
-                <h3 class="calculator-title section-title elemetn-hide td-element">
+                <h3 class="calculator-title section-title elemetn-hide td-element" data-aos="fade-right">
                     Calculate_<br> the cost of a<br> future project
                 </h3>
-                <div class="">
+                <div class="" data-aos="fade-right" data-aos-delay="100">
                     <p class="calculator-descr">
                         <span>This is an approximate</span>
                         <span>calculation.</span>
                     </p>
                 </div>
-                <img src="img/calculator.svg" alt="calculator" class="calculator-icon" />
-                <p class="calculator-text">
+                <img src="img/calculator.svg" alt="calculator" class="calculator-icon" data-aos="fade-up"
+                    data-aos-delay="400">
+                <p class="calculator-text" data-aos="fade-right" data-aos-delay="200">
                     / The final cost depends on the technical requirements, terms, specifics
                     of your project.
                 </p>
@@ -422,24 +458,30 @@
         <div class="container">
             <!-- <div class="footer-main-contact"> -->
             <div class="footer-my-info">
-                <h3 class="footer-my-name">Andrew K</h3>
-                <p class="footer-my-proffesion">Frontend Developer</p>
+                <h3 class="footer-my-name" data-aos="fade-up">Andrew K</h3>
+                <p class="footer-my-proffesion" data-aos="fade-down" data-aos-delay="200">Frontend Developer</p>
             </div>
 
             <div class="footer-contacts">
-                <a href="tel:+380505050505" class="footer-my-tel">+38 (050) 505 05 05</a>
-                <a href="mailto:andrew@gmail.com" class="footer-my-mail">andrew@gmail.com</a>
+                <a href="tel:+380505050505" class="footer-my-tel" data-aos="fade-up">+38 (050)
+                    505 05 05</a>
+                <a href="mailto:andrew@gmail.com" class="footer-my-mail" data-aos="fade-down"
+                    data-aos-delay="200">andrew@gmail.com</a>
             </div>
             <!-- </div> -->
 
             <div class="social-links">
-                <a href="https://moltiplico.github.io/projectgoitmyresume/" class="social-links-item-link">
+                <a href="https://moltiplico.github.io/projectgoitmyresume/" class="social-links-item-link"
+                    data-aos="fade-right">
                     <i class="fab fa-github social-links-item"></i></a>
-                <a href="https://www.linkedin.com/" class="social-links-item-link">
+                <a href="https://www.linkedin.com/" class="social-links-item-link" data-aos="fade-right"
+                    data-aos-delay="100">
                     <i class="fab fa-linkedin social-links-item"></i></a>
-                <a href="https://uk-ua.facebook.com/" class="social-links-item-link">
+                <a href="https://uk-ua.facebook.com/" class="social-links-item-link" data-aos="fade-right"
+                    data-aos-delay="200">
                     <i class="fab fa-facebook-square social-links-item"></i></a>
-                <a href="https://www.instagram.com/" class="social-links-item-link">
+                <a href="https://www.instagram.com/" class="social-links-item-link" data-aos="fade-right"
+                    data-aos-delay="300">
                     <i class="fab fa-instagram social-links-item"></i></a>
             </div>
         </div>
@@ -491,7 +533,7 @@
 
                 <div class="project-modal-scrollable">
                     <img class="project-modal-img" src="img/projects/personal/full-stack.jpg"
-                        alt="full stack project image 1" />
+                        alt="full stack project image 1">
 
                     <a href="https://fullstackonline.goit.ua/" class="project-modal-title">Goit Full Stack
                         разработчик</a>
@@ -518,7 +560,7 @@
 
                 <div class="project-modal-scrollable">
                     <img class="project-modal-img" src="img/projects/personal/wedding.jpg"
-                        alt="wedding project image 1" />
+                        alt="wedding project image 1">
 
                     <a href="https://www.beeruza.com.ua/" class="project-modal-title">Beeruza - свадебные
                         пригласительные и аксессуары</a>
@@ -546,7 +588,7 @@
 
                 <div class="project-modal-scrollable">
                     <img class="project-modal-img" src="img/projects/personal/pro-test.jpg"
-                        alt="pro-test project image 1" />
+                        alt="pro-test project image 1">
 
                     <a href="https://pro-test.goit.co.ua/" class="project-modal-title">Pro test - техническая подготовка
                         QA</a>
@@ -569,7 +611,7 @@
                 <i class="fas fa-times modal-close-btn"></i>
 
                 <div class="project-modal-scrollable">
-                    <img class="project-modal-img" src="img/projects/personal/goit.jpg" alt="goit project image 1" />
+                    <img class="project-modal-img" src="img/projects/personal/goit.jpg" alt="goit project image 1">
 
                     <a href="https://goit.ua/" class="project-modal-title">GoIT - курсы программирования</a>
 
@@ -601,8 +643,7 @@
                 <i class="fas fa-times modal-close-btn"></i>
 
                 <div class="project-modal-scrollable">
-                    <img class="project-modal-img" src="img/projects/team/questify.jpg"
-                        alt="Questify project image 1" />
+                    <img class="project-modal-img" src="img/projects/team/questify.jpg" alt="Questify project image 1">
 
                     <a href="https://questify.goit.co.ua/" class="project-modal-title">Questify - turn your life into a
                         thrilling game</a>
@@ -623,7 +664,7 @@
                 <i class="fas fa-times modal-close-btn"></i>
 
                 <div class="project-modal-scrollable">
-                    <img class="project-modal-img" src="img/projects/team/it-test.jpg" alt="it-test project image 1" />
+                    <img class="project-modal-img" src="img/projects/team/it-test.jpg" alt="it-test project image 1">
 
                     <a href="https://testit.co.ua/" class="project-modal-title">Тест на профессиональную личность в IT
                     </a>
@@ -644,6 +685,8 @@
     <script src="js/project-modals.js"></script>
     <script src="js/modals.js"></script>
     <script src="js/callback-form.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/animation-on-scroll.js"></script>
 
 </body>
 
